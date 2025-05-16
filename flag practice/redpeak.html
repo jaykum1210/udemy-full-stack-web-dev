@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NZ RedPeak</title>
+    <style>
+        #flag{
+            height: 500px;
+            width: 900px;
+            display: flex;
+            position: relative;
+            border: 1px solid black;
+        }
+        #left{
+            height: 100%;
+            width: 50%;
+            background-color: black;
+        }
+        #right{
+            height: 100%;
+            width: 50%;
+            background-color: blue;
+        }
+        #out{
+            position: absolute;
+            border-bottom: 500px solid white;
+            border-left: 450px solid transparent;
+            border-right: 450px solid transparent;
+        }
+        #in{
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            border-bottom: 250px solid red;
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="flag">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="out"></div>
+        <div id="in"></div>
+    </div>
+</body>
+</html>

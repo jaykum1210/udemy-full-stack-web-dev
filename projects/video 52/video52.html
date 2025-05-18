@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video 52</title>
+  <style>
+    body{
+      padding: 0%;
+      margin: 50px 50px 0 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1em;
+    }
+    h1{
+      font-size: 3rem;
+    }
+
+    #main{
+      display: inline-block;
+    }
+    #left-card{
+      width: 45%;
+      float: left;
+    }
+    .title{
+      width: clamp(100px, 20vw, 2000px);
+      height: clamp(100px, 20vw, 2000px);
+      float: left;
+      margin-right: 50px;
+    }
+    #right-card{
+      width: 45%;
+      float: right;
+    }
+    footer{
+      text-align: right;
+      font-weight: 700;
+    }
+    @media (max-width: 1200px) and (min-width: 768px){
+      #main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+      }
+      #left-card , #right-card{
+        width: 100%;
+      }
+    }
+    @media (max-width: 767px){
+      #main{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+      }
+      .title{
+        width: 60vw;
+        height: 60vw;
+        justify-self: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="assets/images/logo.png">
+  <h1>We are a <span id="creative">Creative</span><br>Design Agency</h1>
+  <div id="main">
+    <div id="left-card">
+      <img class="title" src="assets/images/beautiful.jpg">
+      <h2>Beauty</h2>
+      <p id="text">We strive to create the most beautiful websites for all your needs. Working closely with you
+        to
+        design and
+        develop an amazing website for your business.</p>
+    </div>
+    <div id="right-card">
+      <img class="title" src="assets/images/construction.jpg">
+      <h2>Construction</h2>
+      <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+        scratch using HTML and CSS. Only the best for you.</p>
+    </div>
+  </div>
+  <footer>Create. Develop. Design.</footer>
+</body>
+
+</html>

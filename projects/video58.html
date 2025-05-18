@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight:800;
+            line-height: 1.5;
+        }
+        #container{
+            display: flex;
+            gap: 50px;
+            width: 80%;
+        }
+        .box{
+            flex: 1;
+            aspect-ratio: 1 / 0.8;
+            background-color: rgb(232, 230, 230);
+            text-align: center;
+            align-content: center;
+        }
+        .heading{
+            font-size: 1.2rem;
+        }
+        .money{
+            font-size: 2rem;
+        }
+        ul{
+            list-style-type: none;
+        }
+        button{
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 450px){
+            #container{
+                flex-direction: column;
+                /* row-gap: 50px; */
+            }
+            .box{
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <div class="heading">Basic</div>
+            <div class="money">$11.99/month</div>
+            <ul>
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <a href=""><button>Signup</button></a>
+        </div>
+        <div class="box">
+            <div class="heading">Standard</div>
+            <div class="money">$19.99/month</div>
+            <ul>
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 Users</li>
+                <li>✅ Phone and Email Support</li>
+            </ul>
+            <a href=""><button>Signup</button></a>
+        </div>
+        <div class="box">
+            <div class="heading">Premium</div>
+            <div class="money">$49.99/month</div>
+            <ul>
+                <li>✅ 100GB Storage</li>
+                <li>✅ 10 Users</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <a href=""><button>Signup</button></a>
+        </div>
+    </div>
+</body>
+</html>

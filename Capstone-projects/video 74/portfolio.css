@@ -259,6 +259,7 @@ main {
 #foot-1 i {
     margin: 10px 15px 0 0;
 }
+
 #foot-2 form {
     display: flex;
     flex-direction: column;
@@ -366,6 +367,13 @@ footer {
         position: relative;
         z-index: 101;
         margin-right: 0%;
+    }
+
+    .hamburger:focus,
+    .hamburger:active {
+        outline: none;
+        background: transparent;
+        box-shadow: none;
     }
 
     #hed-name {

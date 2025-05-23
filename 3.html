@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Side Panel Menu</title>
+  <style>
+    
+@media (max-width: 599px) {
+    header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hamburger {
+        font-size: 32px;
+        color: var(--color);
+        padding: 20px;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        z-index: 101;
+        margin-right: 0%;
+        top: 10px;
+    }
+    #hed-name h1{
+        text-align: left;
+        padding: 10px 0 0 0;
+    }
+    #hed-right {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 100px;
+        height: 100%;
+        background-color: var(--hrcol);
+        padding: 20px 10px;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked~#hed-right {
+        right: 0;
+    }
+
+    #hed-right ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hed-right ul li {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    #hed-right ul a {
+        color: var(--color);
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+/* On wider screens, keep normal layout */
+@media (min-width: 600px) {
+    #hed-right {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    #hed-right ul {
+        flex-direction: row;
+    }
+
+    #hed-right ul li {
+        padding: 0 15px;
+    }
+}
+  </style>
+</head>
+<body>
+  <!-- Side Panel Navigation -->
+  <div class="side-panel">
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</body>
+</html>

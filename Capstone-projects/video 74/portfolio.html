@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <div id="hed-name">
+            <h1>Jay Kumawat</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <div id="hed-right">
+            <ul>
+                <li class="head-list"><a href="#photo-sec">About<span></span></a></li>
+                <li class="head-list"><a href="#skills">Skills<span></span></a></li>
+                <li class="head-list"><a href="#project-hed">Projects<span></span></a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="head-contact"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="head-contact"><a href="https://www.linkedin.com/in/jaykumawat1210/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li class="head-contact"><a href="https://github.com/jaykum1210"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="overlay"></div>
+
+    </header>
+    <hr>
+    <main>
+        <div id="photo-section">
+            <div id="photo-sec">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg"
+                    alt="Selfie">
+                <h1>Jay Kumawat</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+            <hr class="media-hr">
+            <div id="about-section">
+                <h1>About Me</h1>
+                <p>I’m a Front-End Developer passionate about crafting sleek, responsive, and accessible web interfaces.
+                    I work with HTML, CSS, JavaScript, and frameworks like React to build smooth, user-friendly
+                    experiences.</p>
+
+                <p>Always eager to learn, I enjoy exploring new design trends and optimizing code for performance. I
+                    thrive in team environments and love turning creative ideas into clean, functional designs.</p>
+                <a href="asset/Jay-Kumawat-FlowCV-Resume-20250424 (1).pdf"><button>View CV</button></a>
+            </div>
+        </div>
+        <hr>
+        <div id="skill-sec">
+            <div id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C Programming</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Js</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>PU(CSE) 2024-28</li>
+                    <li>Tilak Public School(XII)</li>
+                    <li>Tilak Public School(X)</li>
+                </ul>
+            </div>
+            <div id="certificate">
+                <h2>Certificate</h2>
+                <ul>
+                    <li>Google Generative AI</li>
+                    <li>Google Facilitator's Program</li>
+                    <li>CSS by Prashant</li>
+                    <li>Full Stack Web Development</li>
+                </ul>
+            </div>
+        </div>
+        <div id="project-hed">
+            <h2>My Projects</h2>
+            <div id="projects">
+                <div id="pro-1" class="project">
+                    <div class="box">
+                        <img src="asset/Screenshot (66).png">
+                        <h2>EduCrack</h2>
+                        <p>EduCrack is an online learning platform that helps students prepare for exams like JEE, NEET,
+                            UPSC, and CLAT. It offers simple explanations, structured courses, and user-friendly tools
+                            to
+                            make competitive exam prep easier and more effective.</p>
+                    </div>
+                </div>
+                <hr class="media-hr">
+                <div id="pro-2" class="project">
+                    <div class="box">
+                        <img src="asset/Screenshot (69).png">
+                        <h2>Nexcent</h2>
+                        <p>Nexcent is a healthcare platform where patients can easily book doctor appointments, get
+                            medicines delivered to their doorstep, and access online consultations—all in one place. It
+                            offers a smooth and reliable way to manage health from the comfort of home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="foot">
+        <div id="foot-1">
+            <h2>Lets Connect</h2>
+            <p>I’m currently open to new opportunities, and my inbox is always open. Whether you have a question, a
+                project in mind, or just want to say hi. I’d love to hear from you and will do my best to get back to
+                you!</p>
+            <a href="https://www.linkedin.com/in/jaykumawat1210/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jaykum1210"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div id="foot-2">
+            <form>
+                <div class="forms">
+                    <label for="mail">Email Address</label>
+                    <input id="mail" type="email" placeholder="abc@gmail.com" name="email" required>
+                </div>
+                <div class="forms">
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" placeholder="Just Saying Hii!" name="subject" required>
+                </div>
+                <div class="forms">
+                    <label for="message">Drop Your Message...</label>
+                    <textarea name="Message" id="message" placeholder="Let's talk about..."></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div id="footer-1">Jay Kumawat</div>
+        <div id="footer-2">Copyright Infringement</div>
+    </footer>
+    <script>
+        document.getElementById('overlay').addEventListener('click', function () {
+            document.getElementById('menu-toggle').checked = false;
+        });
+    </script>
+
+</body>
+
+</html>

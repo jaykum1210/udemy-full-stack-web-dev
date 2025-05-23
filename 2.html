@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star</title>
+    <title>text underline</title>
+    <style>
+        a {
+            color: #4e9af1;
+            text-decoration: none;
+            /* position: relative; */
+            display: inline-block;
+        }
+
+        a span {
+            display: block;
+            height: 2px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover span {
+            transform: scaleX(1);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <a href="#">Hover Me<span></span></a>
+
 </body>
+
 </html>

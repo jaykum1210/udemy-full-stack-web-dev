@@ -116,6 +116,7 @@ main {
     object-fit: cover;
     box-shadow: 0 0 15px 5px var(--h1col);
     transition: box-shadow 0.2s ease-in-out;
+    object-position: center 0px;
 }
 
 #photo-sec img:hover {
